@@ -1,0 +1,15 @@
+<library path="src">
+  <class name="BalanceMode" type="rsv_balance_mode.balance_mode_widget.BalanceModeWidget" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Python GUI widget for setting RoboSavvy balance platform's operation mode
+    </description>
+    <qtgui>
+      <group>
+        <label>RoboSavvy balance</label>
+      </group>
+      <label>Operation mode widget</label>
+      <icon type="theme">system-help</icon>
+      <statustip>User interface for setting operation mode.</statustip>
+    </qtgui>
+  </class>
+</library>

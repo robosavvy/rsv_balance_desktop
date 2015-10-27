@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Launcher to visualize the robot model on RVIZ. -->
+  <include file="$(find rsv_balance_description)/launch/description.launch"/>
+    
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="true" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rsv_balance_viz)/rviz/model.rviz" output="screen"/>
+</launch>
